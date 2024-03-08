@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #eee;
+    }
+
+    *>li {
+        list-style: none;
+    }
+
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: lightblue;
+        padding: 20px;
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .ul {
+        margin-right: 20px;
+    }
+
+    button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        display: none;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    @media screen and (max-width: 800px) {
+        button {
+            display: block;
+        }
+
+    }
+</style>
+
 <body>
-    <script src="app.js"></script>
+
+    <!-- <input type="text" id="input"><br />
+    <button id="btn" onclick="notify()">Send</button> -->
+
+    <Header>
+        <Nav>
+            <ul>
+                <li>LOGO</li>
+            </ul>
+            <ul class="ul hide">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+            <button onclick="openNav()">Open Nav</button>
+        </Nav>
+    </Header>
+
+<script src="app.js"></script>
+
 </body>
+
 </html>

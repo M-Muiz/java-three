@@ -1,24 +1,57 @@
-// var a = 1;
-// var b = 2;
-// var c = 3;
-
-// var eq = c++ + c++ +b + b++ - --a + b-- + b + --c + c++ + c;
-
-// console.log(++c) fisrst plus 1 in value and then console the updated value
-// console.log(c++) plus 1 in value after this console
 
 
-// var firstName = prompt("Enter your first name");
+// let ul = document.querySelector('.ul');
 
-// var lastName = prompt("Enter your last name");
+// function openNav() {
+//     console.log("hy", ul)
+//     ul.classList.toggle("hide")
+// }
 
-// var result = firstName + lastName;
 
-// document.write("Your full name is " + result);
+// function abc() {
+//         let code = '1234567890ACDEF032121';
+//         let newCode = '#';
+
+//         for (var i = 0; i < 6; i++) {
+//             let num = Math.round(Math.random() * 100 / code.length);
+//             newCode += code[num]
+//         }
+//         console.log(newCode)
+//         document.body.style.backgroundColor = newCode;
+// };
+// setInterval(() => {abc()}, 200)
 
 
-// var a = 5;
 
-// // top to bottom or left to right
+// let input = document.getElementById('input');
 
-// console.log(-- a)
+
+// function notify() {
+//     Notification.requestPermission().then(permission => {
+//         permission === 'granted' ? new Notification(input.value) : ''
+//     });
+// };
+
+
+// function foo() {
+//     let x = y = 0;
+//     x++;
+//     y++;
+//     return x;
+// }
+
+// console.log(foo(), typeof x, typeof y);
+
+// console.log(0.1 + 0.2 === 0.3);
+
+
+function multiply(a) {
+    function inner(b) {
+        return a * b;
+    }
+    inner()
+}
+
+let a = multiply(10)
+
+console.log(a(20))
